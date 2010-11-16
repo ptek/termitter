@@ -8,8 +8,8 @@ usage = <<HELP
 USAGE:
   $ termitter
 
-  Termitter is a client for twitter which does one thing - it prints the home 
-  timeline to the standart output of the terminal.
+Termitter is a client for twitter which does one thing - it prints the home 
+timeline to the standart output of the terminal.
   
 HELP
 
