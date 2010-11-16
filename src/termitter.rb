@@ -7,7 +7,7 @@ class Termitter
   def initialize(consumer_key, consumer_secret)
     @consumer_key = consumer_key
     @consumer_secret = consumer_secret
-    @auth_file = File.join(ENV['HOME'], ".termitty.oauth")
+    @auth_file = File.join(ENV['HOME'], ".termitter.oauth")
   end
 
   def run
@@ -18,7 +18,8 @@ class Termitter
 
     puts timeline.join("\n")
   rescue SocketError
-    raise "Could not connect to Twitter"
+    $stderr.puts "Could not connect to Twitter"
+    exit
   end
 
   def authenticate
@@ -57,8 +58,10 @@ class Termitter
     
     client
   rescue SocketError
-    raise "Could not connect to twitter."
+    $stderr.puts "Could not connect to twitter."
+    exit
   rescue
-    raise "Verification failed."
+    $stderr.puts "Verification failed."
+    exit
   end
 end
