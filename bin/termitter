@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+source_dir = File.join(File.dirname(__FILE__), "../src")
+$LOAD_PATH.unshift source_dir
+
+require 'termitter'
+
+usage = <<HELP
+USAGE:
+  $ termitter
+
+  Termitter is a client for twitter which does one thing - it prints the home 
+  timeline to the standart output of the terminal.
+  
+HELP
+
+consumer_key = 'woceBDOMe6MWD8OT5Z3yA'
+consumer_secret ='ZcSDt7eIhqHQvakMr6IevCq4L1P7LJJqfn6f8qPI1Q'
+
+app = Termitter.new(consumer_key, consumer_secret)
+app.run

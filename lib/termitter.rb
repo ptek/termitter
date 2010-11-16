@@ -1,3 +1,0 @@
-module Termitter
-  # Your code goes here...
-end

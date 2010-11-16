@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
-$:.push File.expand_path("../lib", __FILE__)
-require "termitter/version"
+$:.push File.expand_path("../src", __FILE__)
+require "termitter"
 
 Gem::Specification.new do |s|
   s.name        = "termitter"
