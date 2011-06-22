@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Pavlo Kerestey"]
   s.email       = ["pavlo@kerestey.net"]
-  s.homepage    = "http://rubygems.org/gems/termitter"
+  s.homepage    = "https://github.com/kerestey/termitter"
   s.summary     = %q{A simple terminal twitter client which prints the home timeline.}
   s.description = %q{A terminal read-only twitter client. It prints the tweets along with the nicknames to the terminal output.}
 
